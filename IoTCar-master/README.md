@@ -1,15 +1,17 @@
-# IoTCar
-IoT car on Bluemix demo code
+This README.md file is displayed on your project page. You should edit this 
+file to describe your project, including instructions for building and 
+running the project, pointers to the license under which you are making the 
+project available, and anything else you think would be useful for others to
+know.
 
-1. The js folder and img folder are recommend to push under the publish folder.
+We have created an empty license.txt file for you. Well, actually, it says,
+"<Replace this text with the license you've chosen for your project.>" We 
+recommend you edit this and include text for license terms under which you're
+making your code available. A good resource for open source licenses is the 
+[Open Source Initiative](http://opensource.org/).
 
-2. Pay attention to the file path in "index.html"(img path,socketIO.js and jQuery path).
+Be sure to update your project's profile with a short description and 
+eye-catching graphic.
 
-3. Add dependencies ("socket.io":"1.3.7") in package.json to import socketIO module on Bluemix.
-
-4. Go to "https://pip.pypa.io/en/stable/installing/" to download a file. Run "python get-pip.py" as the guide to start using pip to download modules.("python setup.py install" is another method.)
-
-5. Run "pip install Pyserial" to import serial module to local environment.
-
-6. Connect PI in terminal, run "sudo pip install -U socketIO-client" in terminal to add socketIO module on Raspberry Pi.
-	(Official documentation https://pypi.python.org/pypi/socketIO-client/0.7.0)   
+Finally, consider defining some sprints and work items in Track & Plan to give 
+interested developers a sense of your cadence and upcoming enhancements.

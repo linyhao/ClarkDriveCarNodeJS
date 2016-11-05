@@ -1,4 +1,4 @@
-﻿/*eslint-env node, express*/
+/*eslint-env node, express*/
 
 //------------------------------------------------------------------------------
 // node.js starter application for Bluemix
@@ -39,13 +39,7 @@ app.use(express.static(__dirname + "/public"));
 	}
 });*/
 io.on("connection",function(socket){
-	/*
-	if(socket.id){
-		console.log('Socket Id is:' + socket.id);
-	}else{
-		console.log('no socketID');
-	}
-	*/
+	
 	socket.on("String",function(key){
 		if(key === "w"){
 			console.log("Received \"w\" from frontend");
@@ -69,12 +63,9 @@ io.on("connection",function(socket){
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
-//http.listen(appEnv.port);
+
 // start server on the specified port and binding host
-/*app.listen(appEnv.port, "0.0.0.0", function() {
-  // print a message when the server starts listening
-  console.log("server starting on " + appEnv.url);
-});*/
+
 http.listen(appEnv.port, "0.0.0.0", function() {
   // print a message when the server starts listening
   console.log("server starting on " + appEnv.url + " " + appEnv.port);
